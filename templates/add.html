@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flask Blog</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <form action="/add" method="POST">
+      <label for="author">Author:</label><br />
+      <input type="text" id="author" name="author" required /><br />
+      <br />
+      <label for="title">Title:</label><br />
+      <input type="text" id="title" name="title" required /><br /><br />
+      <label for="content">Conent:</label><br />
+      <textarea
+        id="content"
+        name="content"
+        rows="5"
+        cols="40"
+        required
+      ></textarea>
+      <br />
+      <button type="submit">Add Post</button>
+      <br />
+      <a href="{{ url_for('static', filename='index.html') }}"></a>
+    </form>
+  </body>
+</html>
