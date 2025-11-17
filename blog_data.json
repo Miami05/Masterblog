@@ -4,13 +4,20 @@
         "author": "John Doe",
         "title": "First Post",
         "content": "This is my first post.",
-        "like": 2
+        "like": 0
     },
     {
         "id": 2,
         "author": "Jane Doe",
         "title": "Second Post",
         "content": "This is another post.",
-        "like": 2
+        "like": 1
+    },
+    {
+        "id": 3,
+        "author": "Ledio",
+        "title": "First Post",
+        "content": "Hello this i smy first post.",
+        "like": 1
     }
 ]
